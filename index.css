@@ -1,0 +1,33 @@
+
+div{
+    margin: auto;
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(223, 239, 241);
+    border: 3px solid rgb(220, 240, 241);
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+
+    box-shadow: 8px 8px 10px rgb(58, 65, 65);
+
+}
+
+body{
+    background-color: rgb(173, 215, 221);
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large; 
+}
+
+
