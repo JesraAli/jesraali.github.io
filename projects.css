@@ -1,0 +1,112 @@
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -10;
+    background-color: #313030;
+  }
+  
+  .container {
+    display: flex;
+    height: 40rem;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    animation: expand .8s ease forwards;
+    background-color: #16191b;
+    position: relative;
+    transition: all .8s ease;
+  }
+  
+  .containerTitleAbout {
+   width: 50%;
+  }
+  
+  .containerTitleAbout_Inner {
+    width: 80%;
+    margin-left: 80px;
+  }
+  
+  .projectContainer{
+    margin: 50px;
+    width: 50%;
+    overflow: hidden;
+  }   
+      
+  .projectList {
+    width: 100%;
+    animation: slideIn 1.5s ease-in-out forwards;
+    font-family: Roboto Mono,monospace;
+    color: #ccc;
+
+  }
+  
+  /*Hides the title & about sections at start of page loading*/
+  .title {
+    overflow: hidden;
+    height: auto;
+  }
+  
+  .about {
+    height: auto;
+    overflow: hidden;
+  }
+
+
+  p{
+    line-height: 28px;
+    transform: translateY(300px);
+    animation: slideUp .8s ease-in-out forwards .8s;
+    font-family: Roboto Mono,monospace;
+    color: #ccc;
+  }
+  
+  
+  h1 {
+    font-family: Roboto Mono,monospace;
+    color: #ccc;
+      font-size: 40px;
+      margin-bottom: 20px;
+      transform: translateY(100px);
+      animation: slideUp .8s ease forwards .5s;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+
+  hr {
+    width: 299px;
+    background-image: linear-gradient(to right, rgb(255 255 255 / 75%), rgba(0, 0, 0, 0));
+    border: 0;
+    height: 1px;
+    margin-left:0;
+  }

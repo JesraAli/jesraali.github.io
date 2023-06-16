@@ -1,0 +1,36 @@
+.navBar{
+    justify-content:center;
+    align-items: center;
+    height: 10rem;
+    margin-top: 2rem;
+  }
+
+  .navBar a {
+    color: #ccc;
+    padding: 16px 16px;
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-family: Roboto Mono,monospace;
+  }
+
+  .navBar :hover{
+    color: #9b9b9b;
+
+  }
+
+  .middleNav{
+    border-left:  1px solid white;
+    border-right:  1px solid white;
+
+  }
+
+  table{
+    table-layout: fixed;
+    margin:auto;
+    border-collapse: collapse;
+  }
+  
+  td{
+    width:33.33%;
+  }
