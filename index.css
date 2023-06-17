@@ -43,3 +43,36 @@ body {
   .icons a:hover {
     color: #fff;
   }
+
+  /*Title-Header animation*/
+  .titleHeader{
+    animation: fadeIn 3s ;
+    visibility:hidden;
+    animation-fill-mode:forwards;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { 
+      visibility:visible;
+      opacity: 1;
+     }
+  }
+
+  /*Sub-Header animation*/
+  .subHeader{
+    animation: slideUp 1.5s ease-out .7s;
+    visibility: hidden;
+    animation-fill-mode:forwards;
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      visibility: visible;
+      transform: translateY(0px);
+    }
+    }
