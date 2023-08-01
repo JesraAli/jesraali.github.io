@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeButton = document.getElementById('closeButton');
     const popupImage = document.getElementById('popupImage');
     const popupName = document.getElementById('popupName');
+   const popupDescription = document.getElementById('popupDescription');
     const popupWebsiteLink = document.getElementById('popupWebsiteLink');
     const popupGithubLink = document.getElementById('popupGithubLink');
     const projectList = document.querySelector('.projectList');
@@ -10,11 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
     function showPopup(card) {
       const cardImage = card.dataset.image;
       const cardName = card.dataset.name;
+      const cardDescription = card.dataset.description;
       const cardWebsiteLink = card.dataset.website;
       const cardGithubLink = card.dataset.github;
   
       popupImage.src = cardImage;
       popupName.textContent = cardName;
+      popupDescription.innerHTML = cardDescription;
       popupWebsiteLink.href = cardWebsiteLink;
       popupGithubLink.href = cardGithubLink;
   
