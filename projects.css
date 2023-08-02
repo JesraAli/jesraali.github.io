@@ -27,7 +27,8 @@ body {
   background-color: #16191b;
   position: relative;
   transition: all .8s ease;
-  min-height: 30vh; /* Avoids excessive collapsing */
+  min-height: 30vh;
+  /* Avoids excessive collapsing */
 }
 
 .containerTitleAbout {
@@ -67,7 +68,7 @@ body {
   animation: slideIn 1.5s ease-in-out forwards;
   font-family: Roboto Mono, monospace;
   color: #ccc;
-  margin:auto;
+  margin: auto;
 
 
 }
@@ -232,7 +233,8 @@ img {
 .card:hover {
   filter: brightness(50%);
   /* Apply a brightness filter on hover */
-  cursor: zoom-in; /*Magnifiying Glass Effect*/
+  cursor: zoom-in;
+  /*Magnifiying Glass Effect*/
 
 }
 
@@ -309,39 +311,47 @@ img {
 
 @media screen and (max-width: 1018px) {
   .container {
-    flex-direction: column; 
+    flex-direction: column;
     height: 100%;
 
   }
 
   .projectList {
-    width: 50%; 
+    width: 50%;
 
   }
+
   .column {
     width: 100%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 
-  .projectContainer{
-    margin:0px;
+  .projectContainer {
+    margin: 0px;
+  }
+
+  .popupContent {
+    height: 46%;
+    bottom: 260px;
   }
 }
 
 @media screen and (max-width: 484px) {
   .container {
-    flex-direction: column; 
+    flex-direction: column;
     /* min-width:50%; */
   }
+
   .projectList {
-    width: 100%; 
-  }
-  .column {
-    width: 100%; 
-    margin-bottom: 20px; 
+    width: 100%;
   }
 
-  .projectContainer{
-    margin:0px;
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .projectContainer {
+    margin: 0px;
   }
 }
