@@ -17,7 +17,8 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(0, 0, 0, 0.329)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(56, 43, 43, 0.2)), color-stop(.75, rgba(0, 0, 0, 0.329)), color-stop(.75, transparent), to(transparent));
+    /* background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(0, 0, 0, 0.329)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(56, 43, 43, 0.2)), color-stop(.75, rgba(0, 0, 0, 0.329)), color-stop(.75, transparent), to(transparent)); */
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(188, 175, 236, 0.103)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(188, 175, 236, 0.103)), color-stop(.75, rgba(188, 175, 236, 0.103)), color-stop(.75, transparent), to(transparent));
     background-image: -moz-linear-gradient( -45deg, rgba(39, 29, 29, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
     z-index: 1;
     -webkit-background-size: 50px 50px;
@@ -38,8 +39,17 @@
     overflow: hidden;
 }
 
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
 .meter>span {
-    color:rgba(255, 255, 255, 0.863);
+    color:rgba(255, 255, 255, 0.76);
     display: block;
     height: 100%;
     -moz-border-radius: 4px;
